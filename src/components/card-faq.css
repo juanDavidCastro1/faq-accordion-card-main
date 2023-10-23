@@ -1,0 +1,73 @@
+.card-faq {
+    width: 329px;
+    height: 532px;
+    background-color: white;
+    padding: 0 24px;
+    position: relative;
+    background: url('../assets/bg-pattern-mobile.svg'), white;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 20px;
+
+    @media (width >=1024px) {
+        width: 918px;
+        height: 510px;
+        display: flex;
+        padding: 0;
+        flex-direction: row-reverse;
+        background: url('../assets/bg-pattern-desktop.svg'), white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top -270px right 530px;
+    }
+}
+
+.card-faq__illustration {
+    position: absolute;
+    width: 240px;
+    height: 180px;
+    top: -110px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @media (width >=1024px) {
+        top: 68px;
+        left: -80px;
+        margin: unset;
+    }
+}
+
+.card-faq__illustration-box {
+    display: none;
+
+    @media (width >=1024px) {
+        position: absolute;
+        display: block;
+        left: -20px;
+        top: 140px;
+    }
+}
+
+.card-faq__details {
+    @media (width >=1024px) {
+        width: 445px;
+    }
+}
+
+.card-faq__title {
+    margin: 136px 0 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+
+    @media (width >=1024px) {
+        margin: 68px 0 20px;
+        text-align: start;
+    }
+}
+
+.card-faq__accordions {
+    overflow-y: hidden;
+}
